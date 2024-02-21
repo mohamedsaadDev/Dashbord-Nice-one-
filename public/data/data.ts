@@ -15,7 +15,7 @@ export const dataBar = {
     ],
     datasets: [
         {
-        // label: 'Net Profit',
+        label: 'Net Sales',
         data: [100, 150, 120, 180, 150, 200,220,250,300,100,70,20],
         backgroundColor: 'rgb(126,34,206)',
         borderColor: 'rgba(255, 255, 255, 0.1)',
@@ -24,58 +24,12 @@ export const dataBar = {
         },
     ],  
 };
-export const  optionsBar = {
-    scales: {
-    x: {
-        type: 'category',
-        grid: {
-        display: false,
-        },
-    },
-    y: {
-        beginAtZero: false,
-        grid: {
-        color: 'rgb(126, 34, 206)',
-        },
-        ticks: {
-        stepSize: 70,
-        },
-    },
-    },
-    plugins: {
-    legend: {
-        display: false,
-        position: undefined,
-    },
-    },
-    categorySpacing: 100,
-    categoryPercentage: 0.5,
-    barPercentage: 0.2,
-};
 export const dataLine = {
-    labels: ['January', 'February', 'March', 'April', 'May'],
+    labels: ["January","February","March","April","May","June",],
     datasets: [{
     label: 'Monthly Sales',
     borderColor: 'rgb(75, 192, 192)',
-    data: [150, 200, 300, 250, 180],
+    data: [150, 250, 300, 200, 180],
     fill: false,
     }],
-};
-export const optionsLine = {
-    maintainAspectRatio: false,
-    scales: {
-    x: {
-        type: 'category',
-        title: {
-        display: true,
-        text: 'Months',
-        },
-    },
-    y: {
-        title: {
-        display: true,
-        text: 'Sales',
-        },
-    },
-    },
 };
