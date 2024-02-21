@@ -38,7 +38,7 @@ const Login = () => {
         e.preventDefault()
         if(validateForm()){
             try{
-                const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/users/login`,{
+                const res = await fetch(`${process.env.SERVER_HOST}/api/users/login`,{
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
