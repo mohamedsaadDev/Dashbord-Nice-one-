@@ -2,7 +2,7 @@
 import {Line, Bar } from "react-chartjs-2";
 import {Chart as ChartJS,CategoryScale,LinearScale,BarElement,Title,Tooltip,Legend,PointElement,LineElement} from "chart.js";
 import { ArcElement } from "chart.js";
-import { optionsBar, dataBar, optionsLine, dataLine } from "@/public/data/data";
+import { dataBar, dataLine } from "@/public/data/data";
 import dynamic from 'next/dynamic'
 const Cards = dynamic(() => import('./_components/cards/page'))
 const NewOrders = dynamic(() => import('./_components/newOrders/page'))
@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <main className="flex ">
       <div className="mx-2">
-        {/*<Bar  options={optionsBar} data={dataBar} />*/}
+        <Bar data={dataBar} />
         <div className="flex mt-4">
             <NewOrders/>
             <NewUser/>
@@ -22,7 +22,7 @@ export default function Home() {
       <div>
         <Cards/>
         <div className="w-full h-64 ">
-          {/*<Line width={100} height={100} data={dataLine} options={optionsLine} />*/}
+          <Line width={450} height={300} data={dataLine} />
         </div>
       </div>
     </main>
