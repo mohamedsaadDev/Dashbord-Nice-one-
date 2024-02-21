@@ -2,7 +2,8 @@ import { cookies } from 'next/headers'
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 export default function middleware(req:NextRequest){
-    const verify =cookies(req.headers).get('USER')?.value ||false
+    const cookieStore = cookies()
+    const verify =cookieStore.get('USER')?.value ||false
     if(verify){
         const protectedRoutes = ['/login'];
         if(verify &&protectedRoutes.includes(req.nextUrl.pathname)){
