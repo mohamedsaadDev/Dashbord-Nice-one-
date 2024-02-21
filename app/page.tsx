@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <main className="flex ">
       <div className="mx-2">
-        <Bar  options={optionsBar} data={dataBar} />
+        {/*<Bar  options={optionsBar} data={dataBar} />*/}
         <div className="flex mt-4">
             <NewOrders/>
             <NewUser/>
@@ -22,7 +22,7 @@ export default function Home() {
       <div>
         <Cards/>
         <div className="w-full h-64 ">
-          <Line width={100} height={100} data={dataLine} options={optionsLine} />
+          {/*<Line width={100} height={100} data={dataLine} options={optionsLine} />*/}
         </div>
       </div>
     </main>
