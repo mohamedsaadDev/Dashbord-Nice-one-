@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <main className="flex ">
       <div className="mx-2">
-        <Bar data={dataBar} />
+        <Bar width={130} height={65} data={dataBar} />
         <div className="flex mt-4">
             <NewOrders/>
             <NewUser/>
