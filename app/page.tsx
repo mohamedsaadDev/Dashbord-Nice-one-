@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <main className="flex ">
-      <div className="mx-2 w-7/12">
+      <div className="mx-2 w-2/3">
         <Bar data={dataBar} />
         <div className="flex mt-4 w-4/1">
             <NewOrders/>
@@ -22,7 +22,7 @@ export default function Home() {
       <div>
         <Cards/>
         <div className="w-full h-64 ">
-          {/* <Line width={130} height={100} data={dataLine}   /> */}
+           <Line width={130} height={100} data={dataLine}   />
         </div>
       </div>
     </main>
