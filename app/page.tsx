@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
     <main className="flex ">
-      <div className="mx-2">
-        <Bar width={50} height={10} data={dataBar} />
-        <div className="flex mt-4">
+      <div className="mx-2 w-4/3">
+        <Bar data={dataBar} />
+        <div className="flex mt-4 w-4/1">
             <NewOrders/>
             <NewUser/>
         </div>
