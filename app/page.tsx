@@ -11,7 +11,7 @@ ChartJS.register(CategoryScale,LinearScale,BarElement,Title,Tooltip,Legend,LineE
 export default function Home() {
   return (
     <>
-    <main className="flex ">
+    <main className="flex mx-2">
       <div className="mx-2 w-3/5 h-2/5">
         <Bar data={dataBar} />
         <div className="flex mt-4 w-4/1">
@@ -19,7 +19,7 @@ export default function Home() {
             <NewUser/>
         </div>
       </div>
-      <div className="ml-3" >
+      <div className="ml-2" >
         <Cards/>
         <div className="w-full h-64 ml-5
           ">
