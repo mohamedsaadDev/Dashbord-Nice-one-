@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <main className="flex ">
-      <div className="mx-2 w-4/3">
+      <div className="mx-2 w-3/5">
         <Bar data={dataBar} />
         <div className="flex mt-4 w-4/1">
             <NewOrders/>
