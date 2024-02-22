@@ -21,7 +21,8 @@ export default function Home() {
       </div>
       <div>
         <Cards/>
-        <div className="w-full h-64 ml-8 ">
+        <div className="w-full h-64 ml-5
+          ">
            <Line width={130} height={100} data={dataLine}   />
         </div>
       </div>
