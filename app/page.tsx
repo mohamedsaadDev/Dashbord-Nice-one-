@@ -19,7 +19,7 @@ export default function Home() {
             <NewUser/>
         </div>
       </div>
-      <div>
+      <div className="ml-3" >
         <Cards/>
         <div className="w-full h-64 ml-5
           ">
