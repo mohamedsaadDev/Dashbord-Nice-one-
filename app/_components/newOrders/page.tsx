@@ -7,7 +7,7 @@ function NewOrders () {
     const { Orders } = useAppContext();
     const newOrder = Orders.slice(0, 3);
     return (
-        <div className="ml-r min-w-80 max-w-xs bg-white border border-gray-200 rounded-lg shadow sm:px-4 sm:py-3">
+        <div className="w-72 bg-white border border-gray-200 rounded-lg shadow sm:px-4 sm:py-3">
         <div className="flex items-center justify-between mb-4">
         <h5 className="text-xl font-bold leading-none text-gray-900">
             New Orders
