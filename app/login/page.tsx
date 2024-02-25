@@ -7,8 +7,8 @@ const Login = () => {
     const router = useRouter()
     const [isVisible, setIsVisible] = useState(false);
     const [formData, setFormData] = useState({
-        email: '', 
-        password: '',
+        email: 'user@email.com', 
+        password: '1234512345',
         emailError: '',
         passwordError: ''})
         const validateForm = () => {
