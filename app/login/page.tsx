@@ -54,7 +54,7 @@ const Login = () => {
                 jsCookie.default.set('cookie', tokenhash,{ expires: 1 })
                 jsCookie.default.set('role', data.data.role,{ expires: 1 })
                 jsCookie.default.set('USER',"true",{ expires: 1 })
-                if (!res.ok) {
+                if (res.ok) {
                      router.replace('/')
                      router.push('/') 
                 }
